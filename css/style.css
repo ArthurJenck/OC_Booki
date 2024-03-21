@@ -115,6 +115,12 @@ header .logo {
     left: 0;
 }
 
+/*** MAIN ***/
+h1 {
+    font-size: calc(22rem / 16);
+    margin: 0 0 0.5rem 0;
+}
+
 /****** SEARCH **********/
 .search-form {
     padding: calc(35rem / 16) 0;
@@ -142,6 +148,7 @@ header .logo {
     text-align: center;
     align-self: stretch;
     font-weight: 700;
+    padding: 0 1rem;
 }
 
 .search-bar::placeholder {
@@ -166,10 +173,53 @@ header .logo {
     padding: 1rem;
 }
 
+/***** Filtres ********/
+.filters-form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.filters-form label {
+    font-weight: 700;
+}
+
+.filters-wrapper {
+    display: flex;
+    gap: 15px;
+}
+
+.filters-btn-wrap {
+    position: relative;
+    border: 2px var(--accent-bg-color) solid;
+    border-radius: 25px;
+    padding: 1rem calc(19rem / 16);
+    font-weight: 700;
+    background-color: #fff;
+    display: flex;
+    gap: calc(10rem / 16);
+}
+
+.filters-btn-check {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.filters-btn-wrap:has(> .filters-btn-check:checked), .filters-btn-wrap:hover {
+    background-color: #DEEBFF;
+    transition: 0.075s all ease-in-out;
+}
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 5rem;
 }
 
 .hebergements-and-populaires section {
