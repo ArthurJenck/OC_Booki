@@ -18,7 +18,7 @@
 
 <body>
     <div class="main-container">
-        <!-- HEADER -->
+        <!--** HEADER -->
         <header>
             <img src="./images/logo/Booki.png" alt="Booki logo" class="logo">
             <nav>
@@ -28,10 +28,11 @@
                 </ul>
             </nav>
         </header>
-        <!-- MAIN -->
+        <!--** MAIN -->
         <main>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="h1-subtitle">En plein centre-ville ou en pleine nature</p>
+            <!--** SEARCH FORM -->
             <form action="" method="get" class="search-form">
                 <label for="location">
                     <i class="fa-solid fa-location-dot"></i>
@@ -40,6 +41,27 @@
                 <input type="submit" value="Rechercher" class="search-submit-btn">
             </form>
 
+            <form action="" method="get" class="filters-form">
+                <label for="filters">Filtres</label>
+                <div class="filters-wrapper">
+                    <button class="filters-btn-wrap">
+                        <input type="checkbox" name="economique" id="economique" class="filters-btn-check">
+                        <i class="fa-solid fa-money-bill-wave"></i>Économique
+                    </button>
+                    <button class="filters-btn-wrap">
+                        <input type="checkbox" name="economique" id="economique" class="filters-btn-check">
+                        <i class="fa-solid fa-person"></i>Familial
+                    </button>
+                    <button class="filters-btn-wrap">
+                        <input type="checkbox" name="economique" id="economique" class="filters-btn-check">
+                        <i class="fa-solid fa-heart"></i>Romantique
+                    </button>
+                    <button class="filters-btn-wrap">
+                        <input type="checkbox" name="economique" id="economique" class="filters-btn-check">
+                        <i class="fa-solid fa-fire"></i>Nos pépites
+                    </button>
+                </div>
+            </form>
 
             <div class="hebergements-and-populaires">
                 <section class="hebergements" id="hebergements">
