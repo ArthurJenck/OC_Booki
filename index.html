@@ -20,11 +20,14 @@
     <div class="main-container">
         <!--* HEADER -->
         <header>
-            <img src="./images/logo/Booki.png" alt="Booki logo" class="logo">
+            <a href="index.html" class="logo no-select">
+                <img src="./images/logo/Booki.png" alt="Booki logo">
+            </a>
             <nav>
                 <ul class="nav-list">
-                    <li class="nav-elem"><a href="#hebergements" class="nav-link">Hébergements</a></li>
-                    <li class="nav-elem"><a href="#activites" class="nav-link">Activités</a></li>
+                    <li class="noselect nav-elem"><a href="#hebergements" class="nav-link noselect">Hébergements</a>
+                    </li>
+                    <li class="noselect nav-elem"><a href="#activites" class="nav-link noselect">Activités</a></li>
                 </ul>
             </nav>
         </header>
@@ -35,36 +38,40 @@
             <!--* SEARCH FORM -->
             <form action="#" method="get" class="search-form">
                 <label for="location">
-                    <i class="fa-solid fa-location-dot"></i>
+                    <i class="noselect fa-solid fa-location-dot"></i>
                 </label>
-                <input type="text" placeholder="Marseille, France" required class="search-bar" id="location">
-                <input type="submit" value="Rechercher" class="search-submit-btn">
+                <input type="text" placeholder="Marseille, France" required class="search-bar noselect" id="location">
+                <div class="search-submit-btn">
+                    <input type="submit" class="search-submit-input" value="">
+                    <span class="search-submit-btn-text desk-only noselect">Rechercher</span>
+                    <i class="noselect  noselect fa-solid fa-magnifying-glass mobile-only search-submit-btn-text"></i>
+                </div>
             </form>
 
             <!--* FILTRES -->
             <form action="#" method="get" class="filters-form">
                 <label>Filtres</label>
                 <div class="filters-wrapper">
-                    <div class="filters-btn-wrap">
+                    <div class="filters-btn-wrap noselect">
                         <input type="checkbox" name="economique" id="economique" class="filters-btn-check">
-                        <i class="fa-solid fa-money-bill-wave"></i>Économique
+                        <i class="noselect fa-solid fa-money-bill-wave"></i>Économique
                     </div>
                     <div class="filters-btn-wrap">
                         <input type="checkbox" name="economique" id="familial" class="filters-btn-check">
-                        <i class="fa-solid fa-person"></i>Familial
+                        <i class="noselect fa-solid fa-person"></i>Familial
                     </div>
                     <div class="filters-btn-wrap">
                         <input type="checkbox" name="economique" id="romantique" class="filters-btn-check">
-                        <i class="fa-solid fa-heart"></i>Romantique
+                        <i class="noselect fa-solid fa-heart"></i>Romantique
                     </div>
                     <div class="filters-btn-wrap">
                         <input type="checkbox" name="economique" id="pepites" class="filters-btn-check">
-                        <i class="fa-solid fa-fire"></i>Nos pépites
+                        <i class="noselect fa-solid fa-fire"></i>Nos pépites
                     </div>
                 </div>
             </form>
             <div class="info-num-lodgings">
-                <i class="fa-solid fa-info"></i>
+                <i class="noselect fa-solid fa-info"></i>
                 <p><span id="num-lodgings">Plus de 500</span> logements sont disponibles dans cette ville</p>
             </div>
 
@@ -82,12 +89,12 @@
                                     <p class="card-subtitle">Nuit à partir de
                                         <span class="card-price">52</span><span class="euro">€</span>
                                     </p>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <div class="card-rating noselect">
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
@@ -102,12 +109,12 @@
                                     <p class="card-subtitle">Nuit à partir de
                                         <span class="card-price">96</span><span class="euro">€</span>
                                     </p>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <div class="card-rating noselect noselect">
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
@@ -122,12 +129,12 @@
                                     <p class="card-subtitle">Nuit à partir de
                                         <span class="card-price">76</span><span class="euro">€</span>
                                     </p>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <div class="card-rating noselect">
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
@@ -142,12 +149,12 @@
                                     <p class="card-subtitle">Nuit à partir de
                                         <span class="card-price">46</span><span class="euro">€</span>
                                     </p>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <div class="card-rating noselect">
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
@@ -162,12 +169,12 @@
                                     <p class="card-subtitle">Nuit à partir de
                                         <span class="card-price">25</span><span class="euro">€</span>
                                     </p>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <div class="card-rating noselect">
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
@@ -182,12 +189,12 @@
                                     <p class="card-subtitle">Nuit à partir de
                                         <span class="card-price">23</span><span class="euro">€</span>
                                     </p>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <div class="card-rating noselect">
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
@@ -201,7 +208,7 @@
                 <section class="populaires" id="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                        <i class="noselect fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="populaires-cards">
                         <a href="#">
@@ -213,12 +220,12 @@
                                         <h3 class="card-title">Hôtel Le soleil du matin</h3>
                                         <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
                                     </div>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <div class="card-rating noselect">
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
@@ -233,12 +240,12 @@
                                         <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
                                         <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
                                     </div>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <div class="card-rating noselect">
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
@@ -253,12 +260,12 @@
                                         <h3 class="card-title">Hôtel Bleu et Blanc</h3>
                                         <p class="card-subtitle">Nuit à partir de 68<span class="euro">€</span></p>
                                     </div>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <div class="card-rating noselect">
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="noselect fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
@@ -312,23 +319,23 @@
             <section class="footer-section">
                 <h2 class="footer-title">À propos</h2>
                 <ul class="footer-list">
-                    <li class="footer-elem"><a href="#">Fonctionnement du site</a></li>
-                    <li class="footer-elem"><a href="#">Conditions générales</a></li>
-                    <li class="footer-elem"><a href="#">Données et confidentialité</a></li>
+                    <li class="noselect footer-elem"><a href="#">Fonctionnement du site</a></li>
+                    <li class="noselect footer-elem"><a href="#">Conditions générales</a></li>
+                    <li class="noselect footer-elem"><a href="#">Données et confidentialité</a></li>
                 </ul>
             </section>
             <section class="footer-section">
                 <h2 class="footer-title">Nos hébergements</h2>
                 <ul class="footer-list">
-                    <li class="footer-elem"><a href="#">Charte qualité</a></li>
-                    <li class="footer-elem"><a href="#">Proposer votre hôtel</a></li>
+                    <li class="noselect footer-elem"><a href="#">Charte qualité</a></li>
+                    <li class="noselect footer-elem"><a href="#">Proposer votre hôtel</a></li>
                 </ul>
             </section>
             <section class="footer-section">
                 <h2 class="footer-title">Assistance</h2>
                 <ul class="footer-list">
-                    <li class="footer-elem"><a href="#">Centre d'aide</a></li>
-                    <li class="footer-elem"><a href="#">Nous contacter</a></li>
+                    <li class="noselect footer-elem"><a href="#">Centre d'aide</a></li>
+                    <li class="noselect footer-elem"><a href="#">Nous contacter</a></li>
                 </ul>
             </section>
         </footer>
