@@ -383,6 +383,32 @@ h1 {
     font-size: 1rem;
 }
 
+/*** Footer */
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--main-bg-color);
+}
+
+.footer-section {
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+}
+
+.footer-title {
+    font-size: 18px;
+}
+
+.footer-list {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
