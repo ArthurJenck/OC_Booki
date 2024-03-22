@@ -348,10 +348,40 @@ h1 {
     margin-bottom: 5px;
 }
 
+/*** Activites */
+.activites {
+    margin-top: 35px;
+    padding: 30px;
+}
 
+.activites-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
 
+.activites-wrapper a {
+    width: 100%;
+}
 
+.activites-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
 
+.activites-card img {
+    height: calc(439rem/16);
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.activites-name {
+    padding: 20px 19px;
+    font-size: 1rem;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
