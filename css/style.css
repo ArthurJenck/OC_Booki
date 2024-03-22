@@ -64,7 +64,7 @@ a {
     color: var(--main-bg-color)
 }
 
-/****** HEADER **********/
+/****** Header */
 
 header {
     width: 100%;
@@ -115,13 +115,13 @@ header .logo {
     left: 0;
 }
 
-/*** MAIN ***/
+/*** Main */
 h1 {
     font-size: calc(22rem / 16);
     margin: 0 0 0.5rem 0;
 }
 
-/****** SEARCH **********/
+/****** Search */
 .search-form {
     padding: calc(35rem / 16) 0;
     display: flex;
@@ -173,7 +173,7 @@ h1 {
     padding: 1rem;
 }
 
-/***** Filtres ********/
+/***** Filtres */
 .filters-form {
     display: flex;
     gap: 15px;
@@ -214,6 +214,24 @@ h1 {
     transition: 0.075s all ease-in-out;
 }
 
+/*** Info number of lodgings */
+.info-num-lodgings {
+    margin-top: calc(35rem / 16);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-num-lodgings i {
+    border: solid 1px var(--accent-bg-color);
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 10px;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
