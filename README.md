@@ -6,3 +6,8 @@ Rendu du projet n°2 de la formation Développeur Web d'OpenClassrooms : Créez 
 
 Hébergement gratuit sur Netlify.com  
 https://arthurjenckbooki.netlify.app/
+
+## Dates du projet
+
+Commencé officieusement le 12 mars 2024  
+Commencé officiellement le 19 mars 2024
