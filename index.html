@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--** Ajout de meta title, description et favicon -->
+    <!-- Ajout de meta title, description et favicon -->
     <title>Booki | Trouvez votre hébergement pour des vacances de rêve</title>
     <meta name="description"
         content="Avec Booki, trouvez l'hébergement de vos rêves parmi nos centaines d'établissements partenaires.">
@@ -56,19 +56,19 @@
                 <label>Filtres</label>
                 <div class="filters-wrapper">
                     <div class="filters-btn-wrap noselect">
-                        <input type="checkbox" name="economique" id="economique" class="filters-btn-check">
+                        <input type="checkbox" name="economique" id="economiques" class="filters-btn-check">
                         <i class="noselect fa-solid fa-money-bill-wave"></i>Économique
                     </div>
-                    <div class="filters-btn-wrap">
-                        <input type="checkbox" name="economique" id="familial" class="filters-btn-check">
+                    <div class="filters-btn-wrap noselect">
+                        <input type="checkbox" name="familiaux" id="familiaux" class="filters-btn-check">
                         <i class="noselect fa-solid fa-person"></i>Familial
                     </div>
-                    <div class="filters-btn-wrap">
-                        <input type="checkbox" name="economique" id="romantique" class="filters-btn-check">
+                    <div class="filters-btn-wrap noselect">
+                        <input type="checkbox" name="romantiques" id="romantiques" class="filters-btn-check">
                         <i class="noselect fa-solid fa-heart"></i>Romantique
                     </div>
-                    <div class="filters-btn-wrap">
-                        <input type="checkbox" name="economique" id="pepites" class="filters-btn-check">
+                    <div class="filters-btn-wrap noselect">
+                        <input type="checkbox" name="pepites" id="pepites" class="filters-btn-check">
                         <i class="noselect fa-solid fa-fire"></i>Nos pépites
                     </div>
                 </div>
@@ -83,13 +83,14 @@
                 <section class="hebergements" id="hebergements">
                     <h2 class="section-title">Hébergements à Marseille</h2>
                     <div class="hebergements-cards">
-                        <a href="#">
+                        <a href="#" class="familial romantique pepite">
                             <article class="card">
                                 <img src="./images/hebergements/fred-kleber.jpg"
                                     alt="Image de la chambre d'hôtel montrant deux lits simples et une fenêtre">
                                 <div class="card-content">
                                     <h3 class="card-title">Hôtel du port</h3>
                                     <p class="card-subtitle">Nuit à partir de
+                                        <!-- Span pour préparer l'intégration du JS par la suite -->
                                         <span class="card-price">52</span><span class="euro">€</span>
                                     </p>
                                     <div class="card-rating noselect">
@@ -103,7 +104,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a href="#" class="romantique pepite">
                             <article class="card">
                                 <img src="./images/hebergements/febrian-zakaria.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit, une chaise et un bureau">
@@ -123,7 +124,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a href="#" class="familial pepite">
                             <article class="card">
                                 <img src="./images/hebergements/reisetopia.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit, un dressing et un miroir">
@@ -143,7 +144,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a href="#" class="familial">
                             <article class="card">
                                 <img src="./images/hebergements/annie-spratt.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit double et un tableau de la mer">
@@ -163,7 +164,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a href="#" class="economique familial">
                             <article class="card">
                                 <img src="./images/hebergements/marcus-loke.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit superposé et deux fenêtres donnant sur la rue">
@@ -183,7 +184,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a href="#" class="economique pepite">
                             <article class="card">
                                 <img src="./images/hebergements/nicate-lee.jpg"
                                     alt="Image de la chambre d'hôtel montrant deux lits superposés style bois, côte-à-côte">

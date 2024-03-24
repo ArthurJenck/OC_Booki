@@ -1,4 +1,12 @@
 /***General */
+/* --------------------------------------------------
+GLOBAL
+---------------------------------------------------
+Auteur : Arthur Jenck
+Date : 24/03/2024
+Version : 1.0.3
+Site de l'auteur : https://arthurjenck.com */
+
 * {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -23,6 +31,7 @@
     display: none;
 }
 
+/* Class noselect empêchant l'utilisateur de sélectionner certains éléments de l'UI, pour rendre le site plus pro */
 .noselect {
     -webkit-touch-callout: none;
     /* iOS Safari */
@@ -75,15 +84,14 @@ a {
 
 .card-title {
     font-size: 16px;
-    font-weight: 700;
-}
-
-.euro {
-    font-weight: 700;
 }
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+.filters-btn-wrap, .euro, .card-title, .search-bar, .search-submit-btn, .filters-form label, .filters-btn-wrap, .hebergements-showmore {
+    font-weight: 700;
 }
 
 /*** Header */
@@ -111,10 +119,10 @@ header .logo img {
     gap: calc(70rem/16)
 }
 
+/* Attention ici à la taille du lien pour la zone clickable */
 .nav-link {
     display: block;
     padding-top: 1.25rem;
-    height: 100%;
     position: relative;
 }
 
@@ -150,28 +158,25 @@ h1 {
     padding: calc(35rem / 16) 0;
     display: flex;
     align-items: center;
-    height: 100%;
 }
 
 .search-form label {
     background-color: var(--main-bg-color);
     padding: 1rem;
-    align-self: stretch;
     border-radius: 15px 0 0 15px;
-    display: inline-flex;
+    cursor: pointer;
 }
 
 .search-form label i {
     color: #000;
 }
 
+/* Padding pour que le texte ne soit pas collé aux parois de l'input, aspect plus pro */
 .search-bar {
-    display: block;
     border: var(--main-bg-color) 1px solid;
     border-right: none;
     text-align: center;
     align-self: stretch;
-    font-weight: 700;
     padding: 0 1rem;
 }
 
@@ -189,22 +194,20 @@ h1 {
 
 .search-submit-btn {
     background-color: var(--main-color);
-    border: none;
-    font-weight: 700;
     align-self: stretch;
     border-radius: 0 15px 15px 0;
     color: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
 }
 
+/* Cursor en pointer pour montrer à l'utilisateur que le bouton est clickable */
 .search-submit-input {
     width: 100%;
     height: 100%;
     position: absolute;
     opacity: 0;
+    cursor: pointer;
 }
 
 .search-submit-btn-text {
@@ -218,27 +221,24 @@ h1 {
     align-items: center;
 }
 
-.filters-form label {
-    font-weight: 700;
-}
-
 .filters-wrapper {
     display: flex;
     gap: 15px;
 }
 
+/* Le white-space en nowrap permet d'éviter que le texte en plusieurs mots passent à la ligne quand la largeur se fait trop courte */
 .filters-btn-wrap {
     position: relative;
     border: 2px var(--accent-bg-color) solid;
     border-radius: 25px;
     padding: 1rem calc(19rem / 16);
-    font-weight: 700;
     background-color: #fff;
     display: flex;
     gap: calc(10rem / 16);
     white-space: nowrap;
 }
 
+/* Cursor en pointer là encore */
 .filters-btn-check {
     width: 100%;
     height: 100%;
@@ -246,6 +246,7 @@ h1 {
     top: 0;
     left: 0;
     opacity: 0;
+    cursor: pointer;
 }
 
 .filters-btn-wrap:hover {
@@ -253,6 +254,7 @@ h1 {
     transition: 0.075s all ease-in-out;
 }
 
+/* Bien plus facile à faire en Javascript, mais possible aussi en CSS car aux opérateurs */
 .filters-btn-wrap:has(> .filters-btn-check:checked) {
     background-color: var(--main-color);
     color: #fff;
@@ -261,6 +263,32 @@ h1 {
 
 .filters-btn-wrap:has(> .filters-btn-check:checked) i {
     color: #fff;
+}
+
+/*** Fonctionnement des filtres */
+/* Bien que les boutons n'étaient pas exigés fonctionnels dans le cahier des charges de l'agence, je me suis challengé pour essayer de les rendre fonctionnels en HTML & CSS seulement. Ce sera bien sûr beaucoup plus simple à faire quand le JS sera ajouté, et il suffira alors de supprimer la partie ci-dessous du code CSS */
+main:has(.filters-btn-check:checked) .hebergements {
+    height: fit-content;
+}
+
+main:has(.filters-btn-check:checked) .hebergements-cards {
+    justify-content: flex-start;
+}
+
+main:has(.filters-btn-check#economiques:checked) .hebergements a:not(.economique) {
+    display: none;
+}
+
+main:has(.filters-btn-check#familiaux:checked) .hebergements a:not(.familial) {
+    display: none;
+}
+
+main:has(.filters-btn-check#romantiques:checked) .hebergements a:not(.romantique) {
+    display: none;
+}
+
+main:has(.filters-btn-check#pepites:checked) .hebergements a:not(.pepite) {
+    display: none;
 }
 
 /*** Info number of lodgings */
@@ -338,7 +366,6 @@ h1 {
 .hebergements-showmore {
     border: none;
     background-color: transparent;
-    font-weight: 700;
     font-size: 18px;
     margin: 30px 0 2.5px 0;
 }
@@ -354,9 +381,22 @@ h1 {
     align-items: center;
 }
 
+.populaires-cards {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: calc(100% - 30px);
+    gap: 30px;
+    padding-top: 30px;
+}
+
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+}
+
+.populaires-cards .card:first-child {
+    margin-top: 0;
 }
 
 .populaires-cards img {
@@ -369,6 +409,7 @@ h1 {
 .populaires-cards .card-content {
     width: 67%;
     padding-left: 15px;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -382,10 +423,6 @@ h1 {
 
 .populaires-cards .card-subtitle {
     margin: 0;
-}
-
-.populaires-cards .card-rating {
-    margin-bottom: 5px;
 }
 
 /*** Activites */
@@ -492,6 +529,10 @@ footer {
         width: 100%;
     }
 
+    .hebergements .card-title {
+        white-space: nowrap;
+    }
+
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -587,8 +628,6 @@ footer {
     }
 
     h1 {
-        font-size: 22px;
-        font-weight: 700;
         margin-bottom: 0.5rem;
     }
 
