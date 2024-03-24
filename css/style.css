@@ -1,4 +1,4 @@
-/****** General ***********/
+/***General */
 * {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -75,6 +75,7 @@ a {
 
 .card-title {
     font-size: 16px;
+    font-weight: 700;
 }
 
 .euro {
@@ -85,7 +86,7 @@ a {
     color: var(--main-bg-color)
 }
 
-/****** Header */
+/*** Header */
 
 header {
     width: 100%;
@@ -107,8 +108,7 @@ header .logo img {
 .nav-list {
     display: flex;
     list-style-type: none;
-    gap: calc(70rem/16);
-    height: 100%;
+    gap: calc(70rem/16)
 }
 
 .nav-link {
@@ -145,7 +145,7 @@ h1 {
     margin: 0 0 0.5rem 0;
 }
 
-/****** Search */
+/*** Search */
 .search-form {
     padding: calc(35rem / 16) 0;
     display: flex;
@@ -236,6 +236,7 @@ h1 {
     background-color: #fff;
     display: flex;
     gap: calc(10rem / 16);
+    white-space: nowrap;
 }
 
 .filters-btn-check {
@@ -281,7 +282,7 @@ h1 {
     font-size: 10px;
 }
 
-/****** Hebergements And Populaires ***********/
+/*** Hebergements And Populaires */
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -296,7 +297,7 @@ h1 {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/*** Hebergements */
 .hebergements {
     width: 65%;
 }
@@ -309,8 +310,9 @@ h1 {
     flex-wrap: wrap;
 }
 
+/* 29% et non 30% ; pour afficher 3 cards par rangées quelque soit la longueur */
 .hebergements a {
-    width: 30%;
+    width: 29%;
 }
 
 .hebergements-cards img {
@@ -341,7 +343,7 @@ h1 {
     margin: 30px 0 2.5px 0;
 }
 
-/****** Populaires ***********/
+/*** Populaires */
 .populaires {
     width: 32%;
 }
@@ -448,9 +450,15 @@ footer {
     gap: 15px;
 }
 
+/* Optionnel, proposition de design */
+.footer-list a:hover {
+    color: var(--main-color);
+    transition: 0.1s all ease-in-out;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
+/*** Media queries */
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
@@ -682,6 +690,6 @@ footer {
 
 @media (max-width: 374px) {
     .filters-btn-wrap {
-        font-size: 4vw;
+        font-size: 0.8rem;
     }
 }
