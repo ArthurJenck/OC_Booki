@@ -130,6 +130,7 @@ header .logo img {
     color: var(--main-color);
 }
 
+/* Bonne pratique : pas de transition all, et on met la propriété sur l'élément standard et non lors de l'activation de la pseudo-class */
 .nav-link::before {
     content: "";
     display: block;
@@ -139,7 +140,7 @@ header .logo img {
     position: absolute;
     top: 0px;
     left: 50%;
-    transition: all 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
 .nav-link:hover::before {
@@ -236,6 +237,7 @@ h1 {
     display: flex;
     gap: calc(10rem / 16);
     white-space: nowrap;
+    transition: background-color 0.075s ease-in-out;
 }
 
 /* Cursor en pointer là encore */
@@ -251,7 +253,6 @@ h1 {
 
 .filters-btn-wrap:hover {
     background-color: #DEEBFF;
-    transition: 0.075s all ease-in-out;
 }
 
 /* Bien plus facile à faire en Javascript, mais possible aussi en CSS car aux opérateurs */
@@ -490,7 +491,6 @@ footer {
 /* Optionnel, proposition de design */
 .footer-list a:hover {
     color: var(--main-color);
-    transition: 0.1s all ease-in-out;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
