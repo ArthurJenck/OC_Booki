@@ -8,6 +8,10 @@ Rendu du projet n°2 de la formation Développeur Web d'OpenClassrooms : Créez 
 Hébergement gratuit sur Netlify.com  
 https://arthurjenckbooki.netlify.app/
 
+### Découpage de la maquette
+
+Fichier PNG du découpage terminé disponible dans le dossier ./images/decoupage/Découpage.png
+
 ### Dates du projet
 
 Commencé officieusement le 12 mars 2024  
