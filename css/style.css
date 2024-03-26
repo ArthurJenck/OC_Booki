@@ -33,19 +33,7 @@ Site de l'auteur : https://arthurjenck.com */
 
 /* Class noselect empêchant l'utilisateur de sélectionner certains éléments de l'UI, pour rendre le site plus pro */
 .noselect {
-    -webkit-touch-callout: none;
-    /* iOS Safari */
-    -webkit-user-select: none;
-    /* Safari */
-    -khtml-user-select: none;
-    /* Konqueror HTML */
-    -moz-user-select: none;
-    /* Old versions of Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
     user-select: none;
-    /* Non-prefixed version, currently
-                                    supported by Chrome, Edge, Opera and Firefox */
 }
 
 body {
@@ -184,6 +172,12 @@ h1 {
 .search-bar::placeholder {
     color: #000;
 }
+
+/* Obligé de répéter dans une nouvelle déclaration pour Firefox (séparer les pseudo-class par une virgule échouait) */
+.search-bar::-moz-placeholder {
+    opacity: 1;
+}
+
 
 .search-bar:focus {
     outline: none;
