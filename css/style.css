@@ -498,8 +498,6 @@ footer {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
-
-
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -677,6 +675,10 @@ footer {
         order: 1;
         background-color: #fff;
         padding-top: 35px;
+    }
+
+    .hebergements-cards {
+        grid-template: auto / 1fr;
     }
 
     .hebergements-cards a {
