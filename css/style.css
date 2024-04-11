@@ -364,6 +364,7 @@ main:has(.filters-btn-check#pepites:checked) .hebergements a:not(.pepite) {
     background-color: transparent;
     font-size: 18px;
     margin: 30px 0 2.5px 0;
+    cursor: pointer;
 }
 
 /*** Populaires */
