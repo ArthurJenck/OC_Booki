@@ -330,15 +330,11 @@ main:has(.filters-btn-check#pepites:checked) .hebergements a:not(.pepite) {
 /* Entièrement possible de rester sur une flexbox, mais pour le fonctionnement des filtres par la suite le display: grid est plus adapté */
 .hebergements-cards {
     margin-top: 30px;
-    /* display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap; */
     display: grid;
     grid-template: auto / repeat(3, 1fr);
     gap: 30px;
 }
 
-/* 29% et non 30% ; pour afficher 3 cards par rangées quelque soit la longueur */
 .hebergements a {
     width: auto;
 }
