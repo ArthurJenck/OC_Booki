@@ -267,6 +267,28 @@ h1 {
     background-color: #DEEBFF;
 } */
 
+/*** Filters Functioning */
+/* Bien que les boutons n'étaient pas exigés fonctionnels dans le cahier des charges de l'agence, je me suis challengé pour essayer de les rendre fonctionnels en HTML & CSS seulement. Ce sera bien sûr beaucoup plus simple à faire quand le JS sera ajouté, et il suffira alors de supprimer la partie ci-dessous du code CSS */
+main:has(.filters-btn-check:checked) .hebergements {
+    height: fit-content;
+}
+
+main:has(.filters-btn-check#economiques:checked) .hebergements a:not(.economique) {
+    display: none;
+}
+
+main:has(.filters-btn-check#familiaux:checked) .hebergements a:not(.familial) {
+    display: none;
+}
+
+main:has(.filters-btn-check#romantiques:checked) .hebergements a:not(.romantique) {
+    display: none;
+}
+
+main:has(.filters-btn-check#pepites:checked) .hebergements a:not(.pepite) {
+    display: none;
+}
+
 /*** Info number of lodgings */
 .info-num-lodgings {
     margin-top: calc(35rem / 16);
