@@ -13,6 +13,10 @@ https://arthurjenckbooki.netlify.app/
 
 Fichier PNG du découpage terminé disponible dans le dossier ./images/decoupage/Découpage.png
 
+### Challenge personnel
+
+Ajout d'une seconde branche consacrée au fonctionnement des filtres, sans utilisation du JavaScript. Possible grâce à l'emploi du pseudo-sélecteur :has, non valide au W3C et donc non conservé dans la main finale, mais ajouté dans une branche secondaire pour la postérité.
+
 ### Dates du projet
 
 Commencé officieusement le 12 mars 2024  
