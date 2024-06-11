@@ -20,7 +20,8 @@ Ajout d'une seconde branche consacrée au fonctionnement des filtres, sans utili
 ### Dates du projet
 
 Commencé officieusement le 12 mars 2024  
-Commencé officiellement le 19 mars 2024
+Commencé officiellement le 19 mars 2024  
+Terminé le 17 avril 2024
 
 ### Auteur
 
