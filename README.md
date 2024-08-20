@@ -6,8 +6,8 @@ Base de code fournie par OpenClassrooms disponible sur la branche intial-code.
 
 ### Aperçu hébergé
 
-Hébergement gratuit sur Netlify.com :  
-https://arthurjenckbooki.netlify.app/
+Hébergement gratuit sur GitHub Pages :  
+https://arthurjenck.github.io/OC_Booki/
 
 ### Découpage de la maquette
 
